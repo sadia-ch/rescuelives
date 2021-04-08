@@ -106,7 +106,7 @@ const SignInScreen = ({navigation}) => {
 //            return;
 //        }
 //        signIn(foundUser);
-    navigation.navigate('MainScreen')
+    navigation.navigate('TabBar')
     }
 
     return (

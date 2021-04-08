@@ -180,9 +180,7 @@ const HomeScreen = ({navigation}) => {
             
                 
             </ScrollView>
-            <View styles={{...styles.footer}}>
-               <TabBar/>
-            </View>
+            
         </View>
 
     );

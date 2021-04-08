@@ -73,7 +73,7 @@ const SignInScreen = ({navigation}) => {
     const saveUser =() =>
     {
         //do something auth etc
-        navigation.navigate('MainScreen')
+        navigation.navigate('TabBar')
     }
 
     return (
