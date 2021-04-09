@@ -13,7 +13,7 @@ import {
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Fontisto from 'react-native-vector-icons/Fontisto';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
-import TabBar from './TabBar';
+
 const HomeScreen = ({navigation}) => {
     const Emergency = () =>
     {

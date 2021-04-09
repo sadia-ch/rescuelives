@@ -7,7 +7,7 @@ import PhoneAuthScreen from './PhoneAuthScreen';
 import OTPScreen from './OTPScreen';
 import SignInScreen from './SignInScreen';
 import SignUpScreen from './SignUpScreen';
-import HomeScreen from './HomeScreen';
+import SettingScreen from './SettingScreen';
 import TabBar from './TabBar';
 
 const RootStack = createStackNavigator();
@@ -20,6 +20,8 @@ const RootStackScreen = ({navigation}) => (
         <RootStack.Screen name="SignInScreen" component={SignInScreen}/>
         <RootStack.Screen name="SignUpScreen" component={SignUpScreen}/>
         <RootStack.Screen name="TabBar" component={TabBar}/>
+        <RootStack.Screen name="SettingScreen" component={SettingScreen}/>
+
     </RootStack.Navigator>
 );
 
