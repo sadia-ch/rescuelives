@@ -13,7 +13,7 @@ import {
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Fontisto from 'react-native-vector-icons/Fontisto';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
-
+import { Appbar ,Title} from 'react-native-paper';
 const HomeScreen = ({navigation}) => {
     const Emergency = () =>
     {
@@ -32,11 +32,13 @@ const HomeScreen = ({navigation}) => {
     };
     return(
         <View style = {{...styles.container}}>
-            <View style={{...styles.header}}>
-                <Text style={{...styles.headerText}}>
-                    Rescue Lives
-                </Text>
-            </View>
+            <StatusBar backgroundColor='#003152' barStyle="light-content"/>
+            <Appbar.Header theme={{ colors:{ primary:"#003152",}}}
+            style={{flexDirection:"row",alignItems:"center"}} >
+            <Title style={{color:"white", paddingLeft:30}}>
+            {"Rescue Lives"}
+            </Title>
+            </Appbar.Header>
             <ScrollView>
             <View style={{...styles.middleContainer}}>
                 <View style={{...styles.row0}}>

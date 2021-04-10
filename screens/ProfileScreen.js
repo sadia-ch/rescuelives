@@ -1,9 +1,10 @@
 import React from 'react';
-import {View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import {View, Text, StyleSheet, TouchableOpacity,StatusBar } from 'react-native';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 const ProfileScreen =({navigation})=>{
 return(
     <View style={{...styles.container}}>
+        <StatusBar backgroundColor="darkgray" barStyle="light-content"/>
       <View style={{...styles.nameView}}>
           <Text style={{...styles.nameText}}>FirstName L.</Text>
       </View>
@@ -57,7 +58,7 @@ return(
       </View>
       <View style={{...styles.thirdView}}>
           <Text style={{...styles.termsText}}>
-              jdkskjd
+              Terms and conditions
           </Text>
       </View>
       <View style={{...styles.forthView}}></View>
@@ -93,11 +94,12 @@ const styles = StyleSheet.create({
         backgroundColor:"#f4f2ed",
         borderBottomWidth:0.2,
         borderColor:"black",
-       
     },
     thirdView:{
         flex:0.7,
         backgroundColor:"#f4f2ed",
+        
+        alignItems:"center",
        
     },
    forthView:{
@@ -120,10 +122,9 @@ const styles = StyleSheet.create({
    },
    termsText:
    {
-    position:"absolute",
-    top:15,
-    left:30,
-    flexDirection:"row"
+       paddingTop:30,
+        fontSize:14,
+        fontWeight:"bold"
    }
 
 });
