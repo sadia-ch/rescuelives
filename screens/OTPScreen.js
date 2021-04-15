@@ -76,7 +76,7 @@ const DismissKeyboard = ({children})=>{
                         <TouchableOpacity
                         onPress={OtpVerify}
                         disabled={ this.state.code.length == 6 ? false : true}
-                        style={[styles.buttonContinue,{backgroundColor:this.state.code.length == 6 ? '#3B9C9C' : 'grey'}]}>
+                        style={[styles.buttonContinue,{backgroundColor:this.state.code.length == 6 ? '#014961' : 'grey'}]}>
                             <Text style={{...styles.buttonText}}>
                             Continue</Text>
                             <MaterialIcons 
@@ -149,6 +149,6 @@ const styles = StyleSheet.create({
     sendCodeText:{
         fontSize: 16,
         fontWeight: 'bold',
-        color:'#3B9C9C'
+        color:'#014961'
     }
 })

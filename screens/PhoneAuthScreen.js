@@ -16,6 +16,8 @@ import { SCREEN_HEIGHT, LOGO_HEIGHT_POSITION,TEXT_INPUT_HEIGHT } from "../Consta
 import { firebase } from '@react-native-firebase/auth';
 
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import LinearGradient from 'react-native-linear-gradient';
+
 const DismissKeyboard = ({children})=>{
   return(<TouchableWithoutFeedback onPress={()=>Keyboard.dismiss()}>
   {children}
@@ -41,13 +43,13 @@ class  PhoneAuthScreen extends Component {
   
   focusedInput = () => { 
     this.inputContainer.setNativeProps({
-      style: { borderColor: 'blue' }
+      style: { borderBottomColor: 'blue' }
     }) 
   }
 
   blurredInput = () => { 
     this.inputContainer.setNativeProps({
-      style: { borderColor: 'red' }
+      style: { borderBottomColor: 'red' }
     }) 
   }
   constructor(props) {
@@ -101,7 +103,7 @@ class  PhoneAuthScreen extends Component {
               <TouchableOpacity  
                 onPress={this.signInWithPhoneNumber}
                 disabled={this.state.phoneNumber.length == 10 ?false :true}>
-                  <View style={[styles.btnContinue, {backgroundColor:this.state.phoneNumber.length == 10 ? '#3B9C9C' : 'grey'}]} >
+                  <View  style={[styles.btnContinue, {backgroundColor:this.state.phoneNumber.length == 10 ? '#014961' : 'grey'}]} >
                     <Text style={{...styles.buttonText}}>
                       Continue
                     </Text>
@@ -149,9 +151,9 @@ const styles = StyleSheet.create({
     openDialogView:{
       flexDirection:'row',
       alignItems:'center',
-      borderRadius:10,
-      borderWidth:1,
-      borderBottomWidth:1.5,
+      width: '85%',
+      borderBottomWidth: 1,
+      
       paddingStart:20,
       paddingEnd:170
     },
